@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>سياسة الخصوصية — تطبيق عُمدة الأحكام</title>
+  <meta name="description" content="سياسة خصوصية تطبيق عُمدة الأحكام">
+  <meta property="og:title" content="سياسة الخصوصية — عُمدة الأحكام">
+  <meta property="og:description" content="سياسة خصوصية تطبيق عُمدة الأحكام">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Cairo & Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #1a4d3e;
+      --primary-dark: #12352b;
+      --primary-light: #e8f3ef;
+      --accent-color: #c59b27;
+      --accent-soft: #fcf8ee;
+      --text-main: #24292f;
+      --text-muted: #57606a;
+      --bg-body: #f8faf9;
+      --bg-card: #ffffff;
+      --border-color: #e1e8e5;
+      --border-radius: 14px;
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.85;
+      font-size: 16.5px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header / Navbar */
+    .site-header {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+      color: #ffffff;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(18, 53, 43, 0.15);
+      position: relative;
+    }
+
+    .header-container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      backdrop-filter: blur(4px);
+    }
+
+    .site-header h1 {
+      font-family: 'Cairo', sans-serif;
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .site-header .last-updated {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      font-weight: 400;
+    }
+
+    /* Language Switcher Tabs */
+    .lang-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    .lang-btn {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 0.45rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .lang-btn:hover, .lang-btn.active {
+      background: #ffffff;
+      color: var(--primary-dark);
+      border-color: #ffffff;
+    }
+
+    /* Main Container */
+    .main-container {
+      max-width: 880px;
+      margin: 2rem auto;
+      padding: 0 1.25rem 3rem;
+    }
+
+    /* Content Card */
+    .policy-card {
+      background: var(--bg-card);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+      padding: 2.75rem 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Highlights / Summary Box */
+    .summary-box {
+      background-color: var(--primary-light);
+      border-right: 5px solid var(--primary-color);
+      border-radius: 10px;
+      padding: 1.4rem 1.6rem;
+      margin: 1.5rem 0 2.2rem;
+    }
+
+    .summary-box h3 {
+      font-family: 'Cairo', sans-serif;
+      color: var(--primary-dark);
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .summary-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .summary-list li {
+      position: relative;
+      padding-right: 1.6rem;
+      margin-bottom: 0.55rem;
+      font-size: 1rem;
+      color: #204035;
+    }
+
+    .summary-list li::before {
+      content: "✓";
+      position: absolute;
+      right: 0;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    /* Typography & Sections */
+    h2.section-title {
+      font-family: 'Cairo', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 0.45rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    h3.sub-title {
+      font-family: 'Cairo', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      color: var(--text-main);
+    }
+
+    ul.content-list {
+      margin-right: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    ul.content-list li {
+      margin-bottom: 0.55rem;
+    }
+
+    /* Links */
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: #0d6e50;
+      text-decoration: underline;
+    }
+
+    /* Service Cards */
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+
+    .service-item {
+      background: #fafcfb;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.25rem 1.4rem;
+      border-right: 4px solid var(--accent-color);
+    }
+
+    .service-item h4 {
+      font-family: 'Cairo', sans-serif;
+      color: var(--primary-dark);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Divider */
+    .section-divider {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--border-color), transparent);
+      margin: 3.5rem 0;
+    }
+
+    /* English Section Styling */
+    .ltr-container {
+      direction: ltr;
+      text-align: left;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+    }
+
+    .ltr-container h2.section-title {
+      border-bottom: 2px solid #eef2f5;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .ltr-container .summary-box {
+      border-right: none;
+      border-left: 5px solid var(--primary-color);
+    }
+
+    .ltr-container .summary-list li {
+      padding-right: 0;
+      padding-left: 1.6rem;
+    }
+
+    .ltr-container .summary-list li::before {
+      right: auto;
+      left: 0;
+    }
+
+    .ltr-container .service-item {
+      border-right: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .ltr-container ul.content-list {
+      margin-right: 0;
+      margin-left: 1.5rem;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: #ffffff;
+      border-top: 1px solid var(--border-color);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-content {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    .footer-title {
+      font-family: 'Cairo', sans-serif;
+      font-weight: 700;
+      color: var(--primary-dark);
+      font-size: 1.1rem;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .policy-card {
+        padding: 1.75rem 1.25rem;
+        border-radius: 12px;
+      }
+      .site-header {
+        padding: 2rem 1rem;
+      }
+      .site-header h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="app-badge">
+        <span>📖</span> تطبيق عُمدة الأحكام
+      </div>
+      <h1>وثيقة سياسة الخصوصية</h1>
+      <p class="last-updated">آخر تحديث: 9 أكتوبر 2026 | Last updated: October 9, 2026</p>
+      
+      <div class="lang-nav">
+        <a href="#arabic-policy" class="lang-btn active">العربية</a>
+        <a href="#english-policy" class="lang-btn">English</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-container">
+
+    <!-- ARABIC SECTION -->
+    <article id="arabic-policy" class="policy-card">
+      <h2 class="section-title" style="margin-top:0;">سياسة الخصوصية لتطبيق عُمدة الأحكام</h2>
+      
+      <p>
+        توضح هذه السياسة كيفية تعامل تطبيق <strong>عُمدة الأحكام</strong> مع المعلومات عند استخدامه. باستخدام التطبيق، فإنك تقر بالاطلاع على هذه السياسة والموافقة على ما ورد فيها.
+      </p>
+
+      <!-- ملخص سريع -->
+      <div class="summary-box">
+        <h3>📌 ملخص النقاط الرئيسية</h3>
+        <ul class="summary-list">
+          <li>لا يتطلب التطبيق إنشاء حساب أو تسجيل الدخول.</li>
+          <li>لا يطلب التطبيق الاسم أو البريد الإلكتروني أو رقم الهاتف أو الموقع الجغرافي.</li>
+          <li>لا يعرض التطبيق إعلانات تجارية ولا يبيع البيانات الشخصية مطلَقًا.</li>
+          <li>تُحفظ المفضلة وإعدادات القراءة محليًا بالكامل على جهاز المستخدم.</li>
+          <li>يستخدم التطبيق خدمات Firebase للتحليلات الفنية، وتقارير الأعطال، والإشعارات فقط.</li>
+        </ul>
+      </div>
+
+      <h2 class="section-title">البيانات المحفوظة محليًا</h2>
+      <p>
+        يحفظ التطبيق على جهازك بيانات مثل: <strong>الأحاديث المفضلة</strong>، <strong>وعلامات القراءة</strong>، <strong>وحجم الخط</strong>، <strong>والإعدادات المخصصة</strong>. لا يرسل التطبيق هذه البيانات إلى أي خادم خاص بالمطور، ويمكنك حذفها بالكامل في أي وقت عبر مسح بيانات التطبيق أو إلغاء تثبيته من هاتفك.
+      </p>
+
+      <h2 class="section-title">خدمات طرف ثالث (Google Firebase)</h2>
+      <p>
+        يستخدم التطبيق الخدمات التقنية المعتمدة التالية المقدمة من <strong>Google Firebase</strong> لتحسين الاستقرار والأداء:
+      </p>
+
+      <div class="service-grid">
+        <div class="service-item">
+          <h4>1. Firebase Analytics</h4>
+          <p>
+            تساعد هذه الخدمة على فهم الاستخدام العام للتطبيق وتحسين تجربة المستخدم وأداء التطبيق. قد تُعالج معلومات إحصائية مجردة مثل تفاعلات التطبيق، وإصدار التطبيق، ونوع الجهاز، ونظام التشغيل، ومعرفات التطبيق الفنية.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h4>2. Firebase Crashlytics</h4>
+          <p>
+            تُستخدم لاكتشاف الأعطال والمشكلات التقنية وتشخيصها فور حدوثها لإصلاحها. تشمل تقارير الأعطال سجل العطل البرمجي، وحالة التطبيق، ونوع الجهاز، وإصدار النظام. يضيف التطبيق معلومات تقنية محدودة جدًا (مثل إصدار قاعدة البيانات واللغة والشاشة النشطة)، ولا يضيف أي محتوى للأحاديث أو بيانات تعريفية شخصية خاصة بالمستخدم.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h4>3. Firebase Cloud Messaging</h4>
+          <p>
+            تُستخدم لإرسال الإشعارات العامة والتحديثات الإرشادية المهمة. تستخدم رمز تسجيل تقني خاص بالتثبيت لتوصيل الإشعار. يمكنك دائمًا رفض إذن الإشعارات أو إيقاف تشغيلها بالكامل من إعدادات جهازك.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        تخضع معالجة Google للبيانات لشروطها وسياساتها المعتمدة، ومنها: 
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">الخصوصية والأمان في Firebase</a> 
+        و 
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">سياسة خصوصية Google</a>.
+      </p>
+
+      <h2 class="section-title">مشاركة البيانات</h2>
+      <p>
+        لا يبيع مطور التطبيق البيانات الشخصية ولا يشاركها لأغراض إعلانية أو تجارية. قد تُعالج البيانات التقنية المشروحة أعلاه بواسطة شركة Google بصفتها مزود الخدمات الفنية لـ Firebase، أو في الحالات التي يقتضي فيها القانون ذلك.
+      </p>
+
+      <h2 class="section-title">الاحتفاظ بالبيانات وحذفها</h2>
+      <ul class="content-list">
+        <li>تبقى البيانات المحلية على جهازك حتى تختار مسح بيانات التطبيق أو إلغاء تثبيته.</li>
+        <li>تحتفظ Google ببيانات Firebase التحليلية والتشخيصية وفق إعدادات الخدمة وسياسات الاحتفاظ الخاصة بها.</li>
+        <li>لا يوفر التطبيق حسابات مستخدمين، وبالتالي لا توجد أي قواعد بيانات للمستخدمين محفوظة على خوادم خاصة بالمطور.</li>
+      </ul>
+
+      <h2 class="section-title">حماية البيانات</h2>
+      <p>
+        يستخدم التطبيق مكتبات برمجية رسمية وموثوقة، مع تشفير جميع الاتصالات (SSL/HTTPS) عند التواصل مع خدمات Firebase، مع الالتزام بمبدأ الحد الأدنى من البيانات المرسلة. ومع أنه لا توجد وسيلة نقل عبر الإنترنت تضمن الأمان المطلق بنسبة 100%، إلا أننا نتخذ أقصى المعايير والاحتياطات الممكنة.
+      </p>
+
+      <h2 class="section-title">خصوصية الأطفال</h2>
+      <p>
+        لا يستهدف التطبيق جمع أي بيانات تعريفية شخصية مباشرة من الأطفال، ولا يتضمن تسجيل حسابات أو شبكات إعلانية موجهة.
+      </p>
+
+      <h2 class="section-title">التعديلات على سياسة الخصوصية</h2>
+      <p>
+        قد يتم تحديث بنود هذه السياسة في حال إضافة مزايا جديدة أو تحديث الخدمات المستخدمة. سيُحدّث تاريخ آخر تعديل في أعلى هذه الصفحة، ويبقى هذا الرابط هو المصدر الرسمي والمعتمد للسياسة.
+      </p>
+
+      <h2 class="section-title">التواصل والاستفسارات</h2>
+      <p>
+        لأي استفسارات أو ملاحظات بخصوص الخصوصية، يمكنك فتح تذكرة عبر 
+        <a href="https://github.com/FaresSaleemGHub/OmdatAlAhkam-Privacy-Policy/issues" target="_blank" rel="noopener noreferrer">قسم الملاحظات (GitHub Issues)</a> 
+        في مستودع المشروع، مع مراعاة عدم إدراج أي معلومات شخصية أو حساسة في المنشورات العامة.
+      </p>
+    </article>
+
+    <hr class="section-divider">
+
+    <!-- ENGLISH SECTION -->
+    <article id="english-policy" class="policy-card ltr-container">
+      <h2 class="section-title" style="margin-top:0;">Privacy Policy for Omdat Al Ahkam</h2>
+      <p><strong>Last updated:</strong> October 9, 2026</p>
+      
+      <p>
+        This privacy policy explains how the <strong>Omdat Al Ahkam</strong> mobile application handles information. By using the app, you acknowledge and agree to the terms described in this policy.
+      </p>
+
+      <!-- Highlights Box -->
+      <div class="summary-box">
+        <h3 style="color: var(--primary-dark); font-size: 1.15rem; margin-bottom: 0.5rem;">Key Takeaways</h3>
+        <ul class="summary-list">
+          <li>No account creation or login required.</li>
+          <li>Does not request name, email, phone number, or precise location.</li>
+          <li>Free of ads and never sells user data.</li>
+          <li>Favorites and reading preferences are stored exclusively on your device.</li>
+          <li>Uses Google Firebase for analytics, crash reports, and system notifications.</li>
+        </ul>
+      </div>
+
+      <h2 class="section-title">Locally Stored Data</h2>
+      <p>
+        Favorites, reading bookmarks, font size, and custom preferences are stored locally on your device. The app does not transmit this data to any private server owned by the developer. You can completely erase this data at any time by clearing the application storage or uninstalling the app.
+      </p>
+
+      <h2 class="section-title">Third-Party Services (Google Firebase)</h2>
+      <p>
+        The application integrates standard services provided by <strong>Google Firebase</strong> to monitor stability and improve user experience:
+      </p>
+
+      <div class="service-grid">
+        <div class="service-item">
+          <h4>Firebase Analytics</h4>
+          <p>
+            Helps understand general application usage patterns to improve performance. It may process technical metrics like session events, app version, device model, operating system version, and anonymous installation identifiers.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h4>Firebase Crashlytics</h4>
+          <p>
+            Used to diagnose crashes and technical issues in real time. Crash reports include stack traces, device state, OS version, and technical keys (such as database version, locale, active screen, and notification permissions). Crashlytics reports never contain user notes or personal identifiers.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <h4>Firebase Cloud Messaging (FCM)</h4>
+          <p>
+            Used for delivering administrative updates and informational announcements. It utilizes an installation-specific token. You can disable notifications at any time in your device settings.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        Data processing by Google is subject to their respective terms:
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a> 
+        and the 
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+      </p>
+
+      <h2 class="section-title">Data Sharing</h2>
+      <p>
+        The developer does not sell personal data or share it with third parties for marketing purposes. Diagnostic technical data is processed through Google as the infrastructure provider, or when legally compelled by applicable laws.
+      </p>
+
+      <h2 class="section-title">Data Retention & Deletion</h2>
+      <ul class="content-list">
+        <li>Local app data persists until you clear app storage or uninstall the app.</li>
+        <li>Firebase retains diagnostic data in accordance with Google's standard retention schedules.</li>
+        <li>Because the app does not provide user accounts, no profile data is stored on remote servers.</li>
+      </ul>
+
+      <h2 class="section-title">Security Safeguards</h2>
+      <p>
+        Industry-standard practices are employed, including encrypted HTTPS communication with Firebase and data minimization. While no electronic transmission method is 100% impenetrable, all reasonable safeguards are enforced.
+      </p>
+
+      <h2 class="section-title">Children's Privacy</h2>
+      <p>
+        The application is not directed at collecting personal identifiers from children, nor does it employ behavioral advertising or user profiling.
+      </p>
+
+      <h2 class="section-title">Contact & Questions</h2>
+      <p>
+        For inquiries regarding this privacy statement, you may open an issue in the official 
+        <a href="https://github.com/FaresSaleemGHub/OmdatAlAhkam-Privacy-Policy/issues" target="_blank" rel="noopener noreferrer">GitHub repository issues page</a>. Please avoid disclosing sensitive personal information publicly.
+      </p>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-title">تطبيق عُمدة الأحكام — سياسة الخصوصية</div>
+      <p>© 2026 جميع الحقوق محفوظة — تطبيق عُمدة الأحكام</p>
+    </div>
+  </footer>
+
+</body>
+</html>
